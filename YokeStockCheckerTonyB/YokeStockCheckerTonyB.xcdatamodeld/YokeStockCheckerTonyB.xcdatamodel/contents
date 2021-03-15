@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D74" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="StockAttributes" representedClassName="StockAttributes" syncable="YES" codeGenerationType="class">
+        <attribute name="chartDataFiveYears" optional="YES" attributeType="Transformable" customClassName="[Float]"/>
+        <attribute name="chartDataIntraday" optional="YES" attributeType="Transformable" customClassName="[Float]"/>
+        <attribute name="chartDataOneMonth" optional="YES" attributeType="Transformable" customClassName="[Float]"/>
+        <attribute name="chartDataOneWeek" optional="YES" attributeType="Transformable" customClassName="[Float]"/>
+        <attribute name="chartDataOneYear" optional="YES" attributeType="Transformable" customClassName="[Float]"/>
+        <attribute name="chartDataThreeMonths" optional="YES" attributeType="Transformable" customClassName="[Float]"/>
+        <attribute name="chartSegmentsFiveYears" optional="YES" attributeType="Transformable" customClassName="[Int]"/>
+        <attribute name="chartSegmentsIntraday" optional="YES" attributeType="Transformable" customClassName="[Int]"/>
+        <attribute name="chartSegmentsOneMonth" optional="YES" attributeType="Transformable" customClassName="[Int]"/>
+        <attribute name="chartSegmentsOneWeek" optional="YES" attributeType="Transformable" customClassName="[Int]"/>
+        <attribute name="chartSegmentsOneYear" optional="YES" attributeType="Transformable" customClassName="[Int]"/>
+        <attribute name="chartSegmentsThreeMonths" optional="YES" attributeType="Transformable" customClassName="[Int]"/>
+        <attribute name="companyName" optional="YES" attributeType="String"/>
+        <attribute name="creationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="currentPrice" optional="YES" attributeType="String"/>
+        <attribute name="item" optional="YES" attributeType="String"/>
+        <attribute name="percentageChange" optional="YES" attributeType="String"/>
+        <attribute name="priceChange" optional="YES" attributeType="String"/>
+        <attribute name="tickerSymbol" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="StockAttributes" positionX="-63" positionY="-18" width="128" height="314"/>
+    </elements>
+</model>
