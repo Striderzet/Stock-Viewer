@@ -36,9 +36,13 @@ func percentageChangeColor(_ percentageChange: String) -> Color {
 
 ///Convert CGFloat to dollar string
 func floatConvertToDollar(_ number: CGFloat) -> String {
+
     var newStr = "$\(number)"
+    
     if let startDotIndex = newStr.firstIndex(of: ".") {
-        newStr.removeSubrange(newStr.index(startDotIndex, offsetBy: 2)..<newStr.endIndex)
+        if newStr.lastIndex(of: ".") != newStr.index(newStr.endIndex, offsetBy: -2) { //this is for the float string that came back too short for truncation
+            newStr.removeSubrange(newStr.index(startDotIndex, offsetBy: 3)..<newStr.endIndex)
+        }
     }
     return newStr
 }
