@@ -40,8 +40,13 @@ func floatConvertToDollar(_ number: CGFloat) -> String {
     var newStr = "$\(number)"
     
     if let startDotIndex = newStr.firstIndex(of: ".") {
-        if newStr.lastIndex(of: ".") != newStr.index(newStr.endIndex, offsetBy: -2) { //this is for the float string that came back too short for truncation
+        
+        //this is for the float string that came back too short for truncation
+        if newStr.lastIndex(of: ".") != newStr.index(newStr.endIndex, offsetBy: -2) {
             newStr.removeSubrange(newStr.index(startDotIndex, offsetBy: 3)..<newStr.endIndex)
+        } else {
+            //add this char for persistence
+            newStr += "0"
         }
     }
     return newStr
